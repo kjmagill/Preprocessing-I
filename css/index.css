@@ -1,1 +1,345 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 3rem;
+}
+p {
+  font-size: 2rem;
+}
+.container {
+  margin: 0 5%;
+}
+nav {
+  display: block;
+  text-align: right;
+  padding: 2% 0;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0;
+  }
+}
+nav a {
+  color: #406a94;
+  font-size: 2rem;
+  text-decoration: none;
+  padding-left: 5%;
+}
+@media (max-width: 500px) {
+  nav a {
+    padding: 3% 0;
+  }
+}
+header {
+  width: 100%;
+  background-color: #d9e0e5;
+}
+header .selfie {
+  width: 27%;
+  margin: 3.5% 0 2% 2.5%;
+}
+header .page-title {
+  margin-left: 5%;
+}
+header .page-subtitle {
+  margin: 1.5% 5% 0 5%;
+  padding-bottom: 2.5%;
+  border-bottom: 1px solid #a6a6a6;
+}
+@media (max-width: 500px) {
+  header .page-subtitle {
+    padding-top: 1%;
+    padding-bottom: 4%;
+  }
+}
+header #contact {
+  margin: 2.5% 5% 2% 5%;
+}
+@media (max-width: 500px) {
+  header #contact {
+    padding: 1% 0;
+  }
+}
+header #contact .linkedin-link {
+  color: black;
+  text-decoration: none;
+}
+header a .linkedin-icon {
+  width: 20%;
+  margin: 0 0 7% 5%;
+}
+@media (max-width: 500px) {
+  header a .linkedin-icon {
+    width: 35%;
+  }
+}
+.section-2 {
+  display: flex;
+  justify-content: space-between;
+  margin: 3% 0;
+}
+.section-2 #profile {
+  width: 55%;
+}
+.section-2 #profile p {
+  margin: 3% 0;
+  line-height: 140%;
+  letter-spacing: 0.02rem;
+}
+@media (max-width: 500px) {
+  .section-2 #profile p {
+    line-height: 100%;
+    letter-spacing: 0;
+  }
+}
+.section-2 .skills {
+  width: 35%;
+}
+.section-2 .skills h3 {
+  font-size: 2.7rem;
+  margin-bottom: 5%;
+}
+@media (max-width: 500px) {
+  .section-2 .skills h3 {
+    margin-bottom: 2%;
+  }
+}
+.section-2 .skills .skills-list {
+  font-size: 2rem;
+  margin: 3% 0;
+}
+.section-2 .skills .skills-list li {
+  border: 1px solid #a6a6a6;
+  padding: 2.5% 5%;
+}
+@media (max-width: 500px) {
+  .section-2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-2 #profile {
+    width: 100%;
+  }
+  .section-2 .skills {
+    width: 100%;
+    margin-top: 3%;
+  }
+}
+.section-3 {
+  margin: 3% 0;
+}
+.section-3 h3 {
+  font-size: 2.7rem;
+}
+.section-3 .history-container {
+  display: flex;
+  font-size: 2rem;
+  margin: 2% 0;
+}
+.section-3 .history-container .yrs {
+  width: 15%;
+}
+.section-3 .history-container .yrs p {
+  border-top: 1px solid #a6a6a6;
+  padding: 1rem 0;
+  padding-left: 1.5rem;
+}
+@media (max-width: 500px) {
+  .section-3 .history-container .yrs p {
+    font-size: 1.2rem;
+  }
+}
+.section-3 .history-container .company {
+  width: 30%;
+}
+.section-3 .history-container .company p {
+  border-top: 1px solid #a6a6a6;
+  padding: 1rem 0;
+}
+@media (max-width: 500px) {
+  .section-3 .history-container .company p {
+    font-size: 1.2rem;
+  }
+}
+.section-3 .history-container .position {
+  width: 50%;
+}
+.section-3 .history-container .position p {
+  border-top: 1px solid #a6a6a6;
+  padding: 1rem 0;
+}
+@media (max-width: 500px) {
+  .section-3 .history-container .position p {
+    font-size: 1.2rem;
+  }
+}
+.section-3 .history-container .tech {
+  width: 25%;
+}
+.section-3 .history-container .tech p {
+  border-top: 1px solid #a6a6a6;
+  padding: 1rem 0;
+}
+@media (max-width: 500px) {
+  .section-3 .history-container .tech p {
+    font-size: 1.2rem;
+  }
+}
+.bold {
+  font-weight: bold;
+}
+.grey {
+  background-color: #d9e0e5;
+}
+footer {
+  display: block;
+  text-align: center;
+  color: white;
+  background-color: #406a94;
+  padding: 3% 0 4% 0;
+  margin-top: 4%;
+}
+@media (max-width: 500px) {
+  footer {
+    margin-top: 6%;
+  }
+}
