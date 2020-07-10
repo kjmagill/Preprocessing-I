@@ -3,10 +3,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>My Resume</title>
+  <title>KJ Magill Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +17,81 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+<div class="container"> <!-- Page container open -->
+
+  <!-- Navigation bar --> 
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#profile">About</a>
+    <a href="https://kjmagill.github.io/portfolio-website/" target="_blank">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Header block section -->
+  <header>
+    <img class="selfie" src="images/kj-square.jpg" alt="Photo of KJ Magill">
+    <h1 class="page-title">KJ Magill</h1>
+    <h2 class="page-subtitle">Full Stack Web Developer | Business Developer</h4>
+    <p id="contact">I'm currently in the market for a full-time, part-time or freelance web developer role. To view my full work history and/or open a discussion, visit <a class="linkedin-link" href="https://www.linkedin.com/in/kjmagill/" target="_blank">my LinkedIn</a> via the button below.</p>
+    <a onclick="window.open('https://www.linkedin.com/in/kjmagill/','_blank');">
+      <img class="linkedin-icon" src="images/linkedin-icon.png" alt="Let's connect on LinkedIn">
+    </a>
+  </header>
+
+  <!-- Section 2: Profile and Skills -->
+  <section class="section-2">
+    <div id="profile">
+      <h2 class="profile-title">Personal Profile</h3>
+      <p>Knowledgable and thorough Web Developer with superior attention to detail. Driven and self-motivated, and therefore effective at completing tasks with minimal supervision. Confident leader and enthusiastic communicator. Advocate for clean code and open-source software.</p>
+    </div>
+    <div class="skills">
+      <h3>Technical Skills</h3>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Systems Adminstration</li>
+        <li>Hardware Troubleshooting</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Section 3: Work history -->
+  <section class="section-3">
+    <h3>Work History</h3>
+    <div class="history-container">
+      <div class="yrs">
+        <p class="bold">Yrs</p>
+        <p class="grey">1</p>
+        <p>2</p>
+        <p class="grey">3</p>
+      </div>
+      <div class="company">
+        <p class="bold">Company</p>
+        <p class="grey">Leios</p>
+        <p>Elysian</p>
+        <p class="grey">The Admiral Resort</p>
+      </div>
+      <div class="position">
+        <p class="bold">Position</p>
+        <p class="grey">Co-founder</p>
+        <p>Head of Business Development</p>
+        <p class="grey">IT Manager</p>
+      </div>
+      <div class="tech">
+        <p class="bold">Tech Used</p>
+        <p class="grey">Ruby on Rails</p>
+        <p>Hubspot/Asana</p>
+        <p class="grey">LogMeIn Central</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer section -->
+  <footer>
+    <p class="footer-text">&#9400 Copyright - KJ Magill 2019</p>
+  </footer>
+
+</div> <!--Page container closed -->
 </body>
 </html>
